@@ -209,6 +209,28 @@ section{
     --indent: 0;
 }
 
+@media (min-width: 767px) and (max-width: 1024px) {
+    .logo {
+        font-size: 32px;
+    }
+    .navlist a {
+        margin-left: 20px;
+    }
+    .main-content h1 {
+        font-size: 4rem;
+    }
+
+    header {
+        padding: 20px 10%;
+    }
+
+    .hero {
+        background-position: center;
+        height: 100vh;
+        padding: 10px;
+    }
+}
+
 /* For screens smaller than 768px (phones) */
 @media (max-width: 767px) {
     header {
@@ -247,17 +269,7 @@ section{
 }
 
 /* For screens between 768px and 1024px (tablets) */
-@media (min-width: 767px) and (max-width: 1024px) {
-    .logo {
-        font-size: 32px;
-    }
-    .navlist a {
-        margin-left: 20px;
-    }
-    .main-content h1 {
-        font-size: 4rem;
-    }
-}
+
 
 /* For screens larger than 1024px (desktops) */
 @media (min-width: 1025px) {
@@ -410,10 +422,17 @@ section{
         padding-right: 8px;
         max-width: 300px;
         width: 100%;
+        margin-bottom: 8px;
     }
 }
 
 @media (max-width: 1024px) {
+    #about{
+        height: auto;
+        max-width: 900px;
+        width: 100%;
+    }
+
     .container-skill{
         display: grid;
         grid-template-columns: auto;
