@@ -231,7 +231,6 @@ section{
     }
 }
 
-/* For screens smaller than 768px (phones) */
 @media (max-width: 767px) {
     header {
         padding: 20px 5%;
@@ -268,21 +267,11 @@ section{
     }
 }
 
-/* For screens between 768px and 1024px (tablets) */
-
-
-/* For screens larger than 1024px (desktops) */
 @media (min-width: 1025px) {
     header {
         padding: 20px 10%;
     }
 }
-
-
-/*teste*/
-
-
-
 
 #about{
     height: 100vh;
@@ -303,15 +292,15 @@ section{
     right: 0;
     bottom: 0;
     width: 15%; 
-    height: 5px; /* Espessura do sublinhado */
+    height: 5px;
     border-radius: 12px;
-    background-color: var(--main-color); /* Cor do sublinhado */
+    background-color: var(--main-color); 
 }
 
 .contentp{
     display: grid;
-    grid-template-columns: 1fr; /* Define duas colunas de tamanho igual */
-    gap: 8px; /* Espaçamento entre os itens do grid */
+    grid-template-columns: 1fr;
+    gap: 8px; 
     
 }
 
@@ -325,12 +314,6 @@ section{
     font-weight: 200 !important;
     margin-bottom: 8%;
 }
-
-
-
-
-
-
 
 #skills{
     min-height: 100vh;
@@ -353,7 +336,7 @@ section{
 .container-skill {
     max-width: 1000px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas com largura igual */
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     
 }
@@ -454,12 +437,10 @@ section{
     margin: auto;
 }
 
-/* Hide the images by default */
 .mySlides {
     display: none;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
     cursor: pointer;
@@ -476,19 +457,16 @@ section{
     user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Caption text */
 .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -499,7 +477,6 @@ section{
     text-align: center;
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -508,7 +485,6 @@ section{
     top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
     height: 15px;
@@ -525,7 +501,6 @@ section{
     background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
