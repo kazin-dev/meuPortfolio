@@ -235,11 +235,19 @@ section{
     }
     .hero {
         background-position: center;
+        height: 100vh;
+        padding: 10px;
+        padding-top: 44px;
+        padding-bottom: 12px;
+    }
+
+    .btn2{
+        margin: 8px;
     }
 }
 
 /* For screens between 768px and 1024px (tablets) */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1024px) {
     .logo {
         font-size: 32px;
     }
@@ -387,9 +395,28 @@ section{
     visibility: visible;
 }
 
-@media screen and (max-width:800px) {
-    .container {
+@media (max-width: 767px) {
+    #about{
+        height: auto;
+        max-width: 500px;
+        width: 100%;
+    }
+    .container-skill{
         display: block;
+    }
+
+    .imghub{
+        display: block;
+        padding-right: 8px;
+        max-width: 300px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-skill{
+        display: grid;
+        grid-template-columns: auto;
     }
 }
 
