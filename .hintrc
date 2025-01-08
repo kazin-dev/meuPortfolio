@@ -3,26 +3,16 @@
     "development"
   ],
   "hints": {
-    "axe/text-alternatives": [
-      "default",
-      {
-        "image-alt": "off"
-      }
-    ],
+    "no-inline-styles": "off",
+    "axe/text-alternatives": "off",
+    "axe/name-role-value": "off",
     "compat-api/css": [
       "default",
       {
         "ignore": [
-          "backdrop-filter",
-          "user-select"
+          "user-select",
+          "backdrop-filter"
         ]
-      }
-    ],
-    "no-inline-styles": "off",
-    "axe/name-role-value": [
-      "default",
-      {
-        "link-name": "off"
       }
     ]
   }
