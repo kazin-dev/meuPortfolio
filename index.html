@@ -62,7 +62,7 @@
     <section id="about" data-aos="fade-down">
         <div class="slideshow-container">
             <h2 class="underline">Sobre mim</h2>
-            <div class="contentp">
+            <div class="contentp is-collapsed" id="aboutContent" aria-expanded="false">
                 <p>
                     Olá! Meu nome é Kauã Salviano. Tenho vasta experiência na criação de soluções web eficientes e
                     esteticamente agradáveis. Minhas habilidades incluem HTML, CSS, JavaScript e outras tecnologias web
@@ -73,21 +73,35 @@
                     centrada no usuário, sempre visando criar experiências digitais que não sejam apenas funcionais, mas
                     também intuitivas e atraentes.
                 </p>
-                <div>
-                    <img class="imghub" height="180em"
-                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=kazin-dev&layout=compact&langs_count=7&theme=dracula"
-                        style="width: 400px; height: auto;" />
-                    <img class="imghub" height="180em"
-                        src="https://github-readme-stats.vercel.app/api?username=kazin-dev&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"
-                        style="width: 500px; height: auto;" />
-                </div>
-            </div>
 
+                <h3>Front end</h3>
+                <p>Tenho maior experiência no front-end, com foco em construir SPA’s limpas, rápidas e fáceis de manter. Trabalho com React e Vue, usando TypeScript quando traz segurança e escala. Estruturo projetos com Vite e arquitetura por features, componho a UI em componentes reutilizáveis, faço o roteamento com React Router/Vue Router e gerencio estado leve com Context/Pinia/Zustand. Consumo APIs via Axios/Fetch, padronizo código com ESLint/Prettier e cuido de responsividade (mobile-first) e acessibilidade (semântica, contraste, teclado). No visual, uso Tailwind, Bootstrap ou Sass quando é a melhor escolha. Em performance, aplico code-splitting, lazy loading e otimização de assets; deixo o build pronto para CI/CD e deploy (ex.: Vercel). Resultado: interfaces consistentes, bem organizadas e prontas para crescer.</p>
+
+                <h3>Back end</h3>
+                <p>Não sou especialista, mas entrego o que precisa ser feito. Consigo levantar e manter APIs em ASP.NET Core com Entity Framework Core (SQL Server), JWT (login e refresh), Swagger sempre ativo e CORS configurado para produção e previews da Vercel.</p>
+
+                <h3>Mobile</h3>
+                <p>Sou iniciante em mobile e estou estudando Flutter/Dart. Meu foco atual é dominar a árvore de widgets, navegação, responsividade e consumo de REST APIs. Já consigo montar telas fiéis ao design, estado básico e integrar com back-end; sigo evoluindo (boas práticas, testes e publicação). Objetivo: levar a mesma qualidade do front web para apps nativos com Flutter.</p>
+               
+            </div>
+            <button class="readmore-btn" id="aboutToggle"
+                        aria-controls="aboutContent" aria-expanded="false">
+                Ver mais
+             </button>
         </div>
     </section>
 
     <section id="skills" style="padding: 50px;">
         <h2>habilidades</h2>
+        <div style="margin: 30px;">
+                <img class="imghub" height="170em"
+                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=kazin-dev&layout=compact&langs_count=7&theme=dracula"
+                    style="width: 400px; height: auto;" />
+                <img class="imghub" height="100em"
+                src="https://github-readme-stats.vercel.app/api?username=kazin-dev&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"
+                style="width: 600px; height: auto;" />
+        </div>
+
         <div class="container-skill">
             <div class="card-2" data-aos="fade-down">
                 <img src="https://i.postimg.cc/1X8R7m8y/design.png" />
@@ -110,7 +124,7 @@
 
             </div>
             <div class="card-2" data-aos="fade-down">
-                <img src="https://i.morioh.com/200622/b6308ca3.jpg" />
+                <img src="https://hermes.dio.me/articles/cover/180fd740-96b1-49a2-8828-4fe453c166a0.png" />
 
             </div>
             <div class="card-2" data-aos="fade-down">
@@ -124,7 +138,7 @@
             </div>
             <div class="card-2" data-aos="fade-down">
                 <img
-                    src="https://th.bing.com/th/id/R.0196e4d7a6dc10ed597e94b6d857ea82?rik=OD49W54KR2hJCg&riu=http%3a%2f%2fxn--lcki7of.jp%2fwp-content%2fuploads%2fjquery-logo.png&ehk=b7Ktfk7AU6O9EnvVxlP5qtlfzCtVSvuFJlqel3q%2bcZ8%3d&risl=&pid=ImgRaw&r=0" />
+                    src="https://assets.dio.me/xUIUTbIpaJCsjRQO6usvAzVJiAgB12w9QAxPB3oUtFU/f:webp/q:80/L2FydGljbGVzL2NvdmVyLzFjMjNmYTg5LWI1MDItNGVkNC04ODgyLTQ4NWEzNTIwZmU0ZC5wbmc" />
 
             </div>
             <div class="card-2" data-aos="fade-down">
@@ -154,19 +168,33 @@
                     <a href="https://github.com/kazin-dev/disneyplus_clone" class="btn"><i
                             class="ri-github-fill"></i>Github</a>
                 </div>
-                <img src="/image/projects/disney+.png" style="width:100%">
-                <div class="text">Clone disney+ utilizando Gulp para complilar o Sass</div>
+                <img src="/MeusProjetos/meuPortfolio/image/projects/disney+.png" style="width:100%; height: 600px;">
+                <div class="row">
+                    <div class="card">
+                        <p>Landing page inspirada no Disney+ construída com HTML + SCSS e automatizada por Gulp (compile/watch, minify de CSS/JS, otimização de imagens).
+                        Layout responsivo usando Flex/Grid, nomenclatura BEM e boas práticas de acessibilidade.
+                        Código organizado por features (src → dist) e build leve para produção. Deploy na Vercel.
+                        </p>
+
+                    </div>
+                </div>
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext"><a href="https://e-food-one-indol.vercel.app/" class="linkprojeto">Ver
+                <div class="numbertext"><a href="https://billy-pets-project-ubss.vercel.app/" class="linkprojeto">Ver
                         Projeto</a>
                         <a href="https://github.com/kazin-dev/eFood" class="btn"><i class="ri-github-fill"></i>Github</a>
 
                     </div>
                 
-                <img src="/image/projects/baixados (1).png" style="width:100%">
-                <div class="text" style="color: black;">Efood com React e Typescript</div>
+                <img src="/MeusProjetos/meuPortfolio/image/projects/BillyPets.png" style="width:100%;height: 600px;">
+                 <div class="row">
+                    <div class="card">
+                        <p>Projeto full-stack de e-commerce para pet shop com catálogo, carrinho, checkout, área do cliente e painel admin. Frontend em Vue 3 (Vite, Composition API) com Vue Router (rotas públicas/cliente/admin com lazy-loading) e Pinia (auth + favoritos com persistência). Axios com interceptors (JWT no header, refresh token e retry), Bootstrap 5 e Google Login. Deploy do front na Vercel (SPA rewrites).
+                        </p>
+                        <p> Backend em ASP.NET Core com Entity Framework Core (SQL Server), JWT (login/refresh), Swagger e serviços para e-mail, PDF, frete e rastreio Melhor Envio. CORS configurado para produção e previews da Vercel; deploy no Railway.</p>
+                    </div>
+                </div>
             </div>
 
             <div class="mySlides fade">
@@ -174,7 +202,7 @@
                         Projeto</a> <a href="https://github.com/kazin-dev/agenda_de_contatos" class="btn"><i class="ri-github-fill"></i>Github</a>
                     </div>
 
-                <img src="/image/projects/download.png" style="width:100%">
+                <img src="/MeusProjetos/meuPortfolio/image/projects/download.png" style="width:100%">
                 <div class="text" style="color: black;">Agenda de contatos</div>
             </div>
 
@@ -183,7 +211,7 @@
                         Projeto</a> <a href="https://github.com/kazin-dev/landingPage_Joker" class="btn"><i class="ri-github-fill"></i>Github</a>
                     </div>
 
-                <img src="/image/projects/joker_langepage.png" style="width:100%">
+                <img src="/MeusProjetos/meuPortfolio/image/projects/joker_langepage.png" style="width:100%">
                 <div class="text">landing page Coringa</div>
             </div>
 
@@ -192,7 +220,7 @@
                         Projeto</a> <a href="https://github.com/kazin-dev/projeto_restaurante" class="btn"><i class="ri-github-fill"></i>Github</a>
                     </div>
 
-                <img src="/image/projects/restaurante.png" style="width:100%">
+                <img src="/MeusProjetos/meuPortfolio/image/projects/restaurante.png" style="width:100%">
                 <div class="text">Site de Restaurante feito com Jquary e Bootstrap </div>
             </div>
 
@@ -201,7 +229,7 @@
                         Projeto</a> <a href="https://github.com/kazin-dev/todo_vue" class="btn"><i class="ri-github-fill"></i>Github</a>
                     </div>
 
-                <img src="/image/projects/download (1).png" style="width:100%">
+                <img src="/MeusProjetos/meuPortfolio/image/projects/download (1).png" style="width:100%">
                 <div class="text" style="color: black;">Lista de tarefas feito com vueJs e Bootstrap</div>
             </div>
 
@@ -212,7 +240,7 @@
                     </div>
 
 
-                <img src="/image/projects/ListaDeTarefasReact.png" style="width:100%">
+                <img src="/MeusProjetos/meuPortfolio/image/projects/ListaDeTarefasReact.png" style="width:100%">
                 <div class="text" style="color: black;">Lista de Tarefas Feito com React Redux (não responsivo) </div>
             </div>
 
@@ -221,7 +249,7 @@
                         Projeto</a> <a href="https://github.com/kazin-dev/site_gamesshop" class="btn"><i class="ri-github-fill"></i>Github</a>
                     </div>
 
-                <img src="/image/projects/game_shop.png" style="width:100%">
+                <img src="/MeusProjetos/meuPortfolio/image/projects/game_shop.png" style="width:100%">
                 <div class="text" style="color: black;">Loja de Games</div>
             </div>
 
@@ -230,7 +258,7 @@
                         class="linkprojeto">Ver Projeto</a><a href="https://github.com/kazin-dev/projeto_calculadora_medias" class="btn"><i class="ri-github-fill"></i>Github</a>
                     </div>
 
-                <img src="/image/projects/Calcula_medias.png" style="width:100%">
+                <img src="/MeusProjetos/meuPortfolio/image/projects/Calcula_medias.png" style="width:100%">
                 <div class="text" style="color: black;">Calculadora de Médias</div>
             </div>
 
@@ -239,7 +267,7 @@
                         Projeto</a><a href="https://github.com/kazin-dev/blog_bootstrap" class="btn"><i class="ri-github-fill"></i>Github</a>
                 </div>
 
-                <img src="/image/projects/blog_Bootstrap.png" style="width:100%">
+                <img src="/MeusProjetos/meuPortfolio/image/projects/blog_Bootstrap.png" style="width:100%">
                 <div class="text" style="color: black;">Blog simples com Bootstrap</div>
             </div>
 
