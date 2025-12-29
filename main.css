@@ -629,6 +629,13 @@ section{
     transition: all .50s ease;
 }
 
+
+.slide-img {
+  width: 100%;
+  height: auto;
+  max-height: 1200px;
+  object-fit: cover;
+}
 @keyframes fade {
     from {
         opacity: .4
@@ -648,11 +655,17 @@ section{
     }
 }
 
+.row {
+  display: flex;
+  justify-content: center;
+ 
+}
+
 .card {
   border-radius: 10px;
   filter: drop-shadow(0 5px 10px 0 #ffffff);
   width: 1000px;
-  height: 160px;
+   height: auto;
   background: #0e165c;
   border-radius: 5px;
   box-shadow: hsla(0, 0, 0, .2) 0 4px 2px -2px;
